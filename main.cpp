@@ -2,6 +2,7 @@
 
 
 #include <iostream>
+#include "arrays.cpp"
 using namespace std;
 
 class MyClass{
@@ -44,8 +45,24 @@ int main() {
     }
 
     cout<<" Tell me something interesting"<<endl;
+    cin.ignore();
     getline(cin, u);
-    cout<<u;
+
+    cout<<u<<endl;
+
+    string animals[5]= {"Tosia", "Zuzia", "Whisky", "Hugo", "Cola"};
+    cout<<animals[2]<<endl;
+    for(int i=0; i<sizeof(animals); i++){
+        cout<<i<<endl;
+    }
+
+    int numbers[]={};
+    for(int i=0; i<10; i++){
+        numbers[i] = i+1;
+        cout<<numbers[i]<<endl;
+    }
+
+    cout<< sizeof(numbers)<<endl;
 
     return 0;
 }

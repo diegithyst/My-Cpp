@@ -4,4 +4,6 @@ project(My_Cpp)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(My_Cpp main.cpp
+        arrays.cpp
+        arrays.cpp
 )

@@ -55,6 +55,12 @@ build CMakeFiles/My_Cpp.dir/main.cpp.obj: CXX_COMPILER__My_Cpp_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\My_Cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\My_Cpp.dir
 
+build CMakeFiles/My_Cpp.dir/arrays.cpp.obj: CXX_COMPILER__My_Cpp_unscanned_Debug C$:/Users/Mery/Documents/GitHub/My-Cpp/arrays.cpp || cmake_object_order_depends_target_My_Cpp
+  DEP_FILE = CMakeFiles\My_Cpp.dir\arrays.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\My_Cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\My_Cpp.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target My_Cpp
@@ -63,7 +69,7 @@ build CMakeFiles/My_Cpp.dir/main.cpp.obj: CXX_COMPILER__My_Cpp_unscanned_Debug C
 #############################################
 # Link the executable My_Cpp.exe
 
-build My_Cpp.exe: CXX_EXECUTABLE_LINKER__My_Cpp_Debug CMakeFiles/My_Cpp.dir/main.cpp.obj
+build My_Cpp.exe: CXX_EXECUTABLE_LINKER__My_Cpp_Debug CMakeFiles/My_Cpp.dir/main.cpp.obj CMakeFiles/My_Cpp.dir/arrays.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\My_Cpp.dir
